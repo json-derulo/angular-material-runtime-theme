@@ -1,0 +1,33 @@
+{
+  "git": {
+    "requireCleanWorkingDir": true,
+    "requireUpstreamBranch": true,
+    "requireCommits": false,
+    "commit": true,
+    "commitMessage": "chore: release v${version}",
+    "tag": true,
+    "tagName": "v${version}",
+    "push": true,
+    "pushArgs": "--follow-tags"
+  },
+  "npm": {
+    "publish": true,
+    "publishPath": "./dist/lib"
+  },
+  "github": {
+    "release": true,
+    "draft": false,
+    "preRelease": false,
+    "comments": false,
+    "releaseName": "Release v${version}"
+  },
+  "hooks": {
+    "before:init": ["pnpm run build:lib"]
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}
