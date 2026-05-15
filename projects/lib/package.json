@@ -1,0 +1,13 @@
+{
+  "name": "angular-material-runtime-theme",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "dependencies": {
+    "@material/material-color-utilities": "^0.4.0",
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=21",
+    "@angular/core": ">=21"
+  }
+}
