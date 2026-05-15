@@ -1,6 +1,30 @@
 {
   "name": "angular-material-runtime-theme",
   "version": "0.0.1",
+  "description": "Runtime theming for Angular Material 3 apps using Material Design 3 system tokens and CSS custom properties",
+  "keywords": [
+    "angular",
+    "angular-material",
+    "dynamic-theme",
+    "m3",
+    "material-design",
+    "material3",
+    "runtime-theme",
+    "theme-switching",
+    "theming"
+  ],
+  "homepage": "https://json-derulo.github.io/angular-material-runtime-theme/",
+  "bugs": "https://github.com/json-derulo/angular-material-runtime-theme/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Kimmich",
+    "email": "json-derulo@outlook.com",
+    "url": "https://github.com/json-derulo"
+  },
+  "repository": {
+    "url": "https://github.com/json-derulo/angular-material-runtime-theme"
+  },
+  "funding": "https://github.com/sponsors/json-derulo",
   "sideEffects": false,
   "dependencies": {
     "@material/material-color-utilities": "^0.4.0",
