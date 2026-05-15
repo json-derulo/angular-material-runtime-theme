@@ -1,64 +1,100 @@
-# Lib
+# angular-material-runtime-theme
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+Runtime theming for **Angular Material 3** applications. Generate Material Design 3 system color tokens from a single primary hex color and apply them without rebuilding stylesheets.
 
-## Code scaffolding
+Built on Google's [Material Color Utilities](https://github.com/material-foundation/material-color-utilities). Tokens are written as CSS custom properties using the `light-dark()` function so light and dark appearances stay in sync when you toggle `color-scheme`.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Requirements
 
-```bash
-ng generate component component-name
-```
+- Angular **21+**
+- Angular Material **21+** with an M3 theme configured via `mat.theme()` (see [Material theming guide](https://material.angular.dev/guide/theming))
+- Your app must set `color-scheme` on `html` or `body` (`light`, `dark`, or `light dark`) so `light-dark()` tokens resolve correctly
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the library, run:
+## Installation
 
 ```bash
-ng build lib
+npm install angular-material-runtime-theme
+# or
+pnpm add angular-material-runtime-theme
 ```
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+## Setup
 
-### Publishing the Library
+### 1. Configure Angular Material (build time)
 
-Once the project is built, you can publish your library by following these steps:
+In your global styles (for example `styles.scss`), include the Material theme mixin. The seed palette here is only a starting point — runtime tokens override the generated CSS variables.
 
-1. Navigate to the `dist` directory:
+```scss
+@use "@angular/material" as mat;
 
-   ```bash
-   cd dist/lib
-   ```
+html {
+  @include mat.theme(
+    (
+      color: (),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
 
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
+body {
+  color-scheme: light;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+}
+```
 
-## Running unit tests
+### 2. Apply a runtime primary color
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Inject `AngularMaterialRuntimeTheme` and call `setTheme()` with a hex color:
+
+```typescript
+import { Component, inject } from "@angular/core";
+import { AngularMaterialRuntimeTheme } from "angular-material-runtime-theme";
+
+@Component({
+  selector: "app-root",
+  template: `<router-outlet />`,
+})
+export class App {
+  constructor() {
+    inject(AngularMaterialRuntimeTheme).setTheme("#6750A4");
+  }
+}
+```
+
+`applyTheme()` sets `--mat-sys-*` variables on the root component host element.
+
+### 3. Light and dark mode
+
+Toggle `color-scheme` on a root element (typically `document.body`). The library stores each token as `light-dark(<light>, <dark>)`, so the correct tone is picked automatically:
+
+```typescript
+document.body.style.colorScheme = isDark ? "dark" : "light";
+```
+
+You can also use `color-scheme: light dark` in CSS to follow the user's system preference.
+
+## How it works
+
+1. Convert the primary hex to an **HCT** color.
+2. Build tonal palettes for primary, tertiary (analogous accent), neutral, and neutral variant.
+3. For each token, map light and dark tone values to `light-dark(<light>, <dark>)` and assign them on the root host via `element.style.setProperty('--mat-sys-…', value)`.
+
+Angular Material components read these variables, so buttons, form fields, dialogs, and other M3 components pick up the new colors immediately.
+
+## Demo
+
+From the repository root:
 
 ```bash
-ng test
+pnpm start
 ```
 
-## Running end-to-end tests
+Open [http://localhost:4200](http://localhost:4200) for a live showcase with a color picker, preset swatches, dark mode toggle, and many Material components.
 
-For end-to-end (e2e) testing, run:
+## License
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+MIT

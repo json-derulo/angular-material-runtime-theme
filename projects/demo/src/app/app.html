@@ -1,1 +1,53 @@
-<button matButton="filled">Some Button</button>
+<mat-toolbar class="demo-toolbar">
+  <mat-icon class="demo-toolbar__logo" aria-hidden="true">palette</mat-icon>
+  <span class="demo-toolbar__title">Angular Material Runtime Theme</span>
+
+  <span class="demo-toolbar__spacer"></span>
+
+  <div class="theme-controls" aria-label="Theme controls">
+    <label class="theme-controls__color">
+      <span class="theme-controls__label">Primary</span>
+      <input
+        type="color"
+        [value]="primaryColor()"
+        (input)="onColorInput($event)"
+        aria-label="Primary color"
+      />
+      <code class="theme-controls__hex">{{ primaryColor() }}</code>
+    </label>
+
+    <div class="theme-controls__presets" role="group" aria-label="Preset colors">
+      @for (preset of presetColors; track preset.value) {
+      <button
+        type="button"
+        class="preset-swatch"
+        [class.preset-swatch--active]="primaryColor() === preset.value"
+        [style.background-color]="preset.value"
+        [attr.aria-label]="preset.label"
+        [attr.aria-pressed]="primaryColor() === preset.value"
+        (click)="selectPreset(preset.value)"
+      ></button>
+      }
+    </div>
+
+    <mat-slide-toggle
+      class="theme-controls__mode"
+      [checked]="isDark()"
+      (change)="onThemeToggle($event.checked)"
+      aria-label="Dark mode"
+    >
+      Dark mode
+    </mat-slide-toggle>
+  </div>
+</mat-toolbar>
+
+<main class="demo-main">
+  <p class="demo-intro">
+    Pick a primary color or switch light/dark mode to see Material 3 system tokens update across
+    common components — powered by
+    <code>AngularMaterialRuntimeTheme</code>.
+  </p>
+  @defer {
+  <app-material-showcase />
+  }
+</main>

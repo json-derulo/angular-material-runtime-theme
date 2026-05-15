@@ -1,0 +1,243 @@
+<div class="showcase-grid">
+  <section class="showcase-section" aria-labelledby="buttons-heading">
+    <h2 id="buttons-heading" class="showcase-section__title">Buttons</h2>
+    <mat-card>
+      <mat-card-content class="showcase-row">
+        <button matButton="filled">Filled</button>
+        <button matButton="elevated">Elevated</button>
+        <button matButton="outlined">Outlined</button>
+        <button matButton="tonal">Tonal</button>
+        <button matButton="text">Text</button>
+        <button matIconButton aria-label="Favorite">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button matFab aria-label="Add">
+          <mat-icon>add</mat-icon>
+        </button>
+        <button matMiniFab aria-label="Edit">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          matIconButton
+          matBadge="3"
+          matBadgeColor="primary"
+          matBadgeOverlap="false"
+          aria-label="Notifications"
+        >
+          <mat-icon>notifications</mat-icon>
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section class="showcase-section" aria-labelledby="forms-heading">
+    <h2 id="forms-heading" class="showcase-section__title">Form controls</h2>
+    <mat-card>
+      <mat-card-content class="showcase-stack">
+        <div class="showcase-row showcase-row--wrap">
+          <mat-form-field appearance="outline">
+            <mat-label>Outline input</mat-label>
+            <input [formControl]="basicInputControl" matInput placeholder="Type something" />
+            <mat-hint>Uses runtime surface tokens</mat-hint>
+            <mat-error>This is a required field</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Select</mat-label>
+            <mat-select [formControl]="fruitControl">
+              <mat-option value="apple">Apple</mat-option>
+              <mat-option value="banana">Banana</mat-option>
+              <mat-option value="cherry">Cherry</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="showcase-datepicker-field">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="picker" [formControl]="birthdateControl" />
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker" />
+            <mat-datepicker #picker />
+          </mat-form-field>
+        </div>
+
+        <div class="showcase-row showcase-row--wrap">
+          <mat-checkbox checked>Checkbox</mat-checkbox>
+          <mat-radio-group value="a">
+            <mat-radio-button value="a">Option A</mat-radio-button>
+            <mat-radio-button value="b">Option B</mat-radio-button>
+          </mat-radio-group>
+          <mat-slide-toggle checked>Slide toggle</mat-slide-toggle>
+        </div>
+
+        <div class="showcase-slider">
+          <span class="showcase-slider__label">Slider: {{ sliderValue() }}</span>
+          <mat-slider min="0" max="100" step="1" showTickMarks discrete>
+            <input matSliderThumb [value]="sliderValue()" (valueChange)="sliderValue.set($event)" />
+          </mat-slider>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section class="showcase-section" aria-labelledby="chips-heading">
+    <h2 id="chips-heading" class="showcase-section__title">Chips &amp; toggles</h2>
+    <mat-card>
+      <mat-card-content class="showcase-stack">
+        <mat-chip-set aria-label="Tags">
+          <mat-chip-option selected>Angular</mat-chip-option>
+          <mat-chip-option>Material</mat-chip-option>
+          <mat-chip-option>M3</mat-chip-option>
+        </mat-chip-set>
+        <mat-button-toggle-group
+          class="showcase-layout-toggle"
+          [value]="layoutView()"
+          (change)="layoutView.set($event.value)"
+          aria-label="Layout"
+        >
+          <mat-button-toggle value="list">List</mat-button-toggle>
+          <mat-button-toggle value="grid">Grid</mat-button-toggle>
+        </mat-button-toggle-group>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section class="showcase-section" aria-labelledby="feedback-heading">
+    <h2 id="feedback-heading" class="showcase-section__title">Feedback</h2>
+    <mat-card>
+      <mat-card-content class="showcase-stack">
+        <mat-progress-bar mode="determinate" [value]="progressValue()" />
+        <div class="showcase-row">
+          <mat-progress-spinner mode="indeterminate" diameter="40" />
+          <mat-progress-spinner mode="determinate" [value]="progressValue()" diameter="40" />
+        </div>
+        <div class="showcase-row">
+          <button matButton="filled" (click)="openSnackBar()">Show snack bar</button>
+          <button matButton="outlined" (click)="openDialog()">Open dialog</button>
+          <button matButton="tonal" matTooltip="Tooltip on a button">Hover for tooltip</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section class="showcase-section" aria-labelledby="nav-heading">
+    <h2 id="nav-heading" class="showcase-section__title">Navigation</h2>
+    <mat-card>
+      <mat-card-content class="showcase-stack">
+        <mat-tab-group>
+          <mat-tab label="Overview">
+            <p class="showcase-tab-body">Tab content inherits themed surfaces and typography.</p>
+          </mat-tab>
+          <mat-tab label="Details">
+            <p class="showcase-tab-body">Switch tabs to verify ink bar and label colors.</p>
+          </mat-tab>
+          <mat-tab label="Disabled" disabled>
+            <p class="showcase-tab-body">Disabled tab</p>
+          </mat-tab>
+        </mat-tab-group>
+
+        <mat-accordion>
+          <mat-expansion-panel expanded>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Expansion panel</mat-panel-title>
+              <mat-panel-description>Primary-tinted surfaces</mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Expansion panels use container and outline tokens from the generated palette.</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Second panel</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Another row of content for comparison.</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-nav-list aria-label="Sample navigation">
+          <a mat-list-item>
+            <mat-icon matListItemIcon>inbox</mat-icon>
+            <span matListItemTitle>Inbox</span>
+          </a>
+          <a mat-list-item>
+            <mat-icon matListItemIcon>send</mat-icon>
+            <span matListItemTitle>Sent</span>
+          </a>
+        </mat-nav-list>
+
+        <button matButton="outlined" [matMenuTriggerFor]="demoMenu">
+          <mat-icon>more_vert</mat-icon>
+          Menu
+        </button>
+        <mat-menu #demoMenu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>refresh</mat-icon>
+            <span>Refresh</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+          </button>
+        </mat-menu>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section class="showcase-section" aria-labelledby="data-heading">
+    <h2 id="data-heading" class="showcase-section__title">Data display</h2>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Periodic table</mat-card-title>
+        <mat-card-subtitle>Mat-table with themed header row</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <table mat-table [dataSource]="tableData" class="showcase-table">
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>No.</th>
+            <td mat-cell *matCellDef="let row">{{ row.position }}</td>
+          </ng-container>
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+          </ng-container>
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef>Weight</th>
+            <td mat-cell *matCellDef="let row">{{ row.weight }}</td>
+          </ng-container>
+          <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef>Symbol</th>
+            <td mat-cell *matCellDef="let row">{{ row.symbol }}</td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="tableColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: tableColumns"></tr>
+        </table>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section class="showcase-section showcase-section--wide" aria-labelledby="stepper-heading">
+    <h2 id="stepper-heading" class="showcase-section__title">Stepper</h2>
+    <mat-card>
+      <mat-card-content>
+        <mat-stepper linear>
+          <mat-step label="Choose theme">
+            <p>Adjust the toolbar color picker to change the primary palette.</p>
+            <div class="showcase-step-actions">
+              <button matButton matStepperNext>Next</button>
+            </div>
+          </mat-step>
+          <mat-step label="Toggle mode">
+            <p>Use the dark mode switch to flip <code>color-scheme</code> on <code>body</code>.</p>
+            <div class="showcase-step-actions">
+              <button matButton matStepperPrevious>Back</button>
+              <button matButton matStepperNext>Next</button>
+            </div>
+          </mat-step>
+          <mat-step label="Done">
+            <p>All showcased components read the same runtime CSS variables.</p>
+            <div class="showcase-step-actions">
+              <button matButton matStepperPrevious>Back</button>
+            </div>
+          </mat-step>
+        </mat-stepper>
+      </mat-card-content>
+    </mat-card>
+  </section>
+</div>

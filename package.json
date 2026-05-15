@@ -8,7 +8,10 @@
     "build": "pnpm run /^build:/",
     "build:lib": "ng build lib",
     "build:demo": "ng build demo",
-    "test": "ng test",
+    "test": "pnpm run /^test:/",
+    "test:lib": "ng test lib",
+    "test:demo": "ng test demo",
+    "lint": "oxlint",
     "format": "oxfmt",
     "format:check": "oxfmt --check"
   },
@@ -32,6 +35,7 @@
     "jsdom": "^28.0.0",
     "ng-packagr": "^21.2.0",
     "oxfmt": "^0.49.0",
+    "oxlint": "^1.64.0",
     "prettier": "^3.8.1",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"

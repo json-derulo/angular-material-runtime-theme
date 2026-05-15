@@ -1,4 +1,4 @@
-import { ApplicationInitStatus, ApplicationRef, inject, Injectable } from '@angular/core';
+import { DOCUMENT, inject, Injectable } from '@angular/core';
 import {
   argbFromHex,
   DislikeAnalyzer,
@@ -8,19 +8,28 @@ import {
   TonalPalette,
 } from '@material/material-color-utilities';
 
+/** Runtime theme configuration */
+export interface Theme {
+  /** Primary color in hex format (e.g. `#6750A4`) */
+  primary: string;
+  /** Root element for the theme (defaults to `document.documentElement`) */
+  element?: HTMLElement;
+}
+
+/** Service for managing Angular Material runtime themes. */
 @Injectable({ providedIn: 'root' })
 export class AngularMaterialRuntimeTheme {
-  private readonly applicationRef = inject(ApplicationRef);
-  private readonly applicationInitStatus = inject(ApplicationInitStatus);
+  private document = inject(DOCUMENT);
 
-  async applyTheme(primaryHex: string): Promise<void> {
-    await this.applicationInitStatus.donePromise;
-    const root = this.applicationRef.components[0].location.nativeElement as HTMLElement;
+  /** Sets the runtime theme for the application. */
+  setTheme(theme: Theme): void {
+    const root = theme.element ?? this.document.documentElement;
 
-    const primaryHct = Hct.fromInt(argbFromHex(primaryHex));
+    const primaryHct = Hct.fromInt(argbFromHex(theme.primary));
 
     const palettes = {
       primary: TonalPalette.fromHct(primaryHct),
+      secondary: TonalPalette.fromHueAndChroma(primaryHct.hue, Math.max(primaryHct.chroma / 3, 16)),
       tertiary: TonalPalette.fromInt(
         DislikeAnalyzer.fixIfDisliked(new TemperatureCache(primaryHct).analogous(3, 6)[2]).toInt(),
       ),
@@ -39,6 +48,11 @@ export class AngularMaterialRuntimeTheme {
     setToken(palettes.primary, 'on-primary-container', 10, 90);
     setToken(palettes.primary, 'surface-tint', 40, 80);
     setToken(palettes.primary, 'inverse-primary', 80, 40);
+
+    setToken(palettes.secondary, 'secondary', 40, 80);
+    setToken(palettes.secondary, 'on-secondary', 100, 20);
+    setToken(palettes.secondary, 'secondary-container', 90, 30);
+    setToken(palettes.secondary, 'on-secondary-container', 10, 90);
 
     setToken(palettes.neutral, 'surface', 98, 6);
     setToken(palettes.neutral, 'on-surface', 10, 90);

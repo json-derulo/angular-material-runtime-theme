@@ -1,59 +1,49 @@
-# AngularMaterialRuntimeTheme
+# Angular Material Runtime Theme
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+Monorepo for **angular-material-runtime-theme** — runtime Material Design 3 theming for Angular Material apps.
 
-## Development server
+Change the primary brand color at runtime (user settings, white-labeling, accessibility themes) without recompiling Sass. The library derives M3 system tokens from one hex value using [Material Color Utilities](https://github.com/material-foundation/material-color-utilities).
 
-To start a local development server, run:
+## Projects
 
-```bash
-ng serve
-```
+| Project                          | Description                                         |
+| -------------------------------- | --------------------------------------------------- |
+| [`projects/lib`](projects/lib)   | Publishable library (`AngularMaterialRuntimeTheme`) |
+| [`projects/demo`](projects/demo) | Interactive showcase application                    |
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Quick start
 
 ```bash
-ng generate component component-name
+pnpm install
+pnpm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Visit [http://localhost:4200](http://localhost:4200) to explore the demo: color picker, preset palettes, light/dark mode, and a broad set of Angular Material components.
+
+## Build
 
 ```bash
-ng generate --help
+pnpm run build:lib   # library → dist/
+pnpm run build:demo  # demo app
+pnpm run build       # both
 ```
 
-## Building
+## Documentation
 
-To build the project run:
+Full installation, setup, API reference, and theming notes:
+
+**[projects/lib/README.md](projects/lib/README.md)**
+
+## Development
 
 ```bash
-ng build
+pnpm test
+pnpm lint
+pnpm format
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Stack
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Angular
+- Angular Material (M3)
+- Material Color Utilities
