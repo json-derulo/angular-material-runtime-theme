@@ -1,6 +1,6 @@
 {
   "name": "angular-material-runtime-theme",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "ng": "ng",
