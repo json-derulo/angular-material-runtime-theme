@@ -1,5 +1,4 @@
 {
-  "prefix": "./projects/lib",
   "git": {
     "requireCleanWorkingDir": true,
     "requireUpstreamBranch": true,
@@ -23,12 +22,16 @@
     "releaseName": "Release v${version}"
   },
   "hooks": {
-    "after:bump": ["pnpm build:lib"]
+    "after:bump": ["pnpm run build:lib"]
   },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "angular",
       "infile": "CHANGELOG.md"
+    },
+    "@release-it/bumper": {
+      "in": "projects/lib/package.json",
+      "out": "projects/lib/package.json"
     }
   }
 }
