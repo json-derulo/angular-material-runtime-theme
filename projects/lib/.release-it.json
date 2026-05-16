@@ -12,7 +12,8 @@
   },
   "npm": {
     "publish": true,
-    "publishPath": "../../dist/lib"
+    "publishPath": "../../dist/lib",
+    "skipChecks": true
   },
   "github": {
     "release": true,
