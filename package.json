@@ -14,7 +14,7 @@
     "lint": "oxlint",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
-    "release": "release-it"
+    "release": "pnpm --dir projects/lib exec release-it"
   },
   "dependencies": {
     "@angular/cdk": "^21.2.11",

@@ -12,7 +12,7 @@
   },
   "npm": {
     "publish": true,
-    "publishPath": "./dist/lib"
+    "publishPath": "../../dist/lib"
   },
   "github": {
     "release": true,
@@ -22,16 +22,12 @@
     "releaseName": "Release v${version}"
   },
   "hooks": {
-    "after:bump": ["pnpm run build:lib"]
+    "after:bump": ["pnpm --dir ../.. run build:lib"]
   },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "angular",
-      "infile": "CHANGELOG.md"
-    },
-    "@release-it/bumper": {
-      "in": "projects/lib/package.json",
-      "out": "projects/lib/package.json"
+      "infile": "../../CHANGELOG.md"
     }
   }
 }
