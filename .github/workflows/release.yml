@@ -42,6 +42,6 @@ jobs:
         run: pnpm ci
 
       - name: Release
-        run: pnpm release -- --increment=${{ github.event.inputs.version }}
+        run: pnpm release "${{ github.event.inputs.version }}" --ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
