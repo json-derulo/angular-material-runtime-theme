@@ -23,7 +23,8 @@
     "releaseName": "Release v${version}"
   },
   "hooks": {
-    "after:bump": ["pnpm --dir ../.. run build:lib"]
+    "after:bump": ["pnpm --dir ../.. run build:lib"],
+    "before:git:beforeRelease": ["git add ../../CHANGELOG.md"]
   },
   "plugins": {
     "@release-it/conventional-changelog": {
