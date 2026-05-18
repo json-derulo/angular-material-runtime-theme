@@ -1,4 +1,4 @@
-# angular-material-runtime-theme
+# Angular Material Runtime Theme
 
 Runtime theming for **Angular Material 3** applications. Generate Material Design 3 system color tokens from a single primary hex color and apply them without rebuilding stylesheets.
 
@@ -8,7 +8,6 @@ Built on Google's [Material Color Utilities](https://github.com/material-foundat
 
 - Angular **21+**
 - Angular Material **21+** with an M3 theme configured via `mat.theme()` (see [Material theming guide](https://material.angular.dev/guide/theming))
-- Your app must set `color-scheme` on `html` or `body` (`light`, `dark`, or `light dark`) so `light-dark()` tokens resolve correctly
 
 ## Installation
 
@@ -22,7 +21,7 @@ pnpm add angular-material-runtime-theme
 
 ### 1. Configure Angular Material (build time)
 
-In your global styles (for example `styles.scss`), include the Material theme mixin. The seed palette here is only a starting point — runtime tokens override the generated CSS variables.
+In your global styles (for example `styles.scss`), include the Material theme mixin. The seed palette here is only a starting point — runtime tokens may override the generated CSS variables.
 
 ```scss
 @use "@angular/material" as mat;
@@ -30,7 +29,9 @@ In your global styles (for example `styles.scss`), include the Material theme mi
 html {
   @include mat.theme(
     (
-      color: (),
+      color: (
+        error: mat.$red-palette,
+      ),
       typography: Roboto,
       density: 0,
     )
@@ -60,7 +61,7 @@ import { AngularMaterialRuntimeTheme } from "angular-material-runtime-theme";
 })
 export class App {
   constructor() {
-    inject(AngularMaterialRuntimeTheme).setTheme("#6750A4");
+    inject(AngularMaterialRuntimeTheme).setTheme({ primary: "#6750A4" });
   }
 }
 ```
@@ -80,7 +81,7 @@ You can also use `color-scheme: light dark` in CSS to follow the user's system p
 ## How it works
 
 1. Convert the primary hex to an **HCT** color.
-2. Build tonal palettes for primary, tertiary (analogous accent), neutral, and neutral variant.
+2. Build tonal palettes for primary, secondary, tertiary (analogous accent), neutral, and neutral variant.
 3. For each token, map light and dark tone values to `light-dark(<light>, <dark>)` and assign them on the root host via `element.style.setProperty('--mat-sys-…', value)`.
 
 Angular Material components read these variables, so buttons, form fields, dialogs, and other M3 components pick up the new colors immediately.
@@ -93,7 +94,7 @@ From the repository root:
 pnpm start
 ```
 
-Open [http://localhost:4200](http://localhost:4200) for a live showcase with a color picker, preset swatches, dark mode toggle, and many Material components.
+Open [the demo](https://json-derulo.github.io/angular-material-runtime-theme/) for a live showcase with a color picker, preset swatches, dark mode toggle, and many Material components.
 
 ## License
 
