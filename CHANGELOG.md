@@ -1,4 +1,6 @@
+# Changelog
 
+# [](https://github.com/json-derulo/angular-material-runtime-theme/compare/v0.0.5...vnull) (2026-05-18)
 
 * docs: update readme (d2c9b2a)
 * ci: update permissions & env vars (b4b7721)
