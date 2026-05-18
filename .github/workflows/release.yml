@@ -43,3 +43,5 @@ jobs:
 
       - name: Release
         run: pnpm release -- --increment=${{ github.event.inputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
