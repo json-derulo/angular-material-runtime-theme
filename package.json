@@ -2,6 +2,7 @@
   "name": "angular-material-runtime-theme",
   "version": "0.0.3",
   "private": true,
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

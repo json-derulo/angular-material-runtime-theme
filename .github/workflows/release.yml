@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version type (patch, minor, major, or specific version)'
+        description: "Version type (patch, minor, major, or specific version)"
         required: true
-        default: 'patch'
+        default: "patch"
 
 permissions:
   contents: write
