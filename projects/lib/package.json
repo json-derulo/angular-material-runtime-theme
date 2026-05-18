@@ -1,6 +1,6 @@
 {
   "name": "angular-material-runtime-theme",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Runtime theming for Angular Material 3 apps using Material Design 3 system tokens and CSS custom properties",
   "keywords": [
     "angular",
