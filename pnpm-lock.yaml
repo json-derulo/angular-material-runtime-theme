@@ -53,10 +53,10 @@ importers:
         version: 21.2.15(@angular/compiler@21.2.15)(typescript@6.0.3)
       '@release-it/bumper':
         specifier: 7.0.5
-        version: 7.0.5(release-it@20.0.1)
+        version: 7.0.5(release-it@20.2.0)
       '@release-it/conventional-changelog':
         specifier: 11.0.0
-        version: 11.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(release-it@20.0.1)
+        version: 11.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(release-it@20.2.0)
       jsdom:
         specifier: 29.1.1
         version: 29.1.1
@@ -73,8 +73,8 @@ importers:
         specifier: 3.8.3
         version: 3.8.3
       release-it:
-        specifier: 20.0.1
-        version: 20.0.1
+        specifier: 20.2.0
+        version: 20.2.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -3550,8 +3550,8 @@ packages:
   reflect-metadata@0.2.2:
     resolution: {integrity: sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==}
 
-  release-it@20.0.1:
-    resolution: {integrity: sha512-3ob1P1aV+3+ZOoR7qgobfYyMlQbpitzOK09iKTtQ145vFi4rWxlRTgHwtVl8kokCvqiF/cJPxRlfcmZmF5aDJA==}
+  release-it@20.2.0:
+    resolution: {integrity: sha512-9ZTk9ripgctC6VTqH+P54KuboK29A5mG/I3tFfS5hnoAnkwtFFAMHRidYz93ylrW995vF50Ny1aOGJiyRmEN7w==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24.0.0}
     hasBin: true
 
@@ -5422,7 +5422,7 @@ snapshots:
 
   '@phun-ky/typeof@2.0.3': {}
 
-  '@release-it/bumper@7.0.5(release-it@20.0.1)':
+  '@release-it/bumper@7.0.5(release-it@20.2.0)':
     dependencies:
       '@iarna/toml': 3.0.0
       cheerio: 1.2.0
@@ -5431,10 +5431,10 @@ snapshots:
       ini: 5.0.0
       js-yaml: 4.1.1
       lodash-es: 4.18.1
-      release-it: 20.0.1
+      release-it: 20.2.0
       semver: 7.8.1
 
-  '@release-it/conventional-changelog@11.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(release-it@20.0.1)':
+  '@release-it/conventional-changelog@11.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(release-it@20.2.0)':
     dependencies:
       '@conventional-changelog/git-client': 2.7.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)
       concat-stream: 2.0.0
@@ -5442,7 +5442,7 @@ snapshots:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-conventionalcommits: 9.3.1
       conventional-recommended-bump: 11.2.0
-      release-it: 20.0.1
+      release-it: 20.2.0
       semver: 7.8.1
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -7360,7 +7360,7 @@ snapshots:
 
   reflect-metadata@0.2.2: {}
 
-  release-it@20.0.1:
+  release-it@20.2.0:
     dependencies:
       '@inquirer/prompts': 8.4.2
       '@octokit/rest': 22.0.1
