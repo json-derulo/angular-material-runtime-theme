@@ -35,7 +35,7 @@
     "@angular/cli": "21.2.13",
     "@angular/compiler-cli": "21.2.15",
     "@release-it/bumper": "7.0.5",
-    "@release-it/conventional-changelog": "11.0.0",
+    "@release-it/conventional-changelog": "11.0.1",
     "jsdom": "29.1.1",
     "ng-packagr": "21.2.3",
     "oxfmt": "0.52.0",
