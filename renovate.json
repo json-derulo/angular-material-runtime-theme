@@ -9,6 +9,16 @@
       "matchPackageNames": ["ng-packagr", "@angular/{/,}**"],
       "matchUpdateTypes": ["major", "minor"],
       "groupName": "angular"
+    },
+    {
+      "matchFileNames": ["tests/v21/package.json"],
+      "matchPackageNames": ["@angular/{/,}**"],
+      "allowedVersions": "<=21"
+    },
+    {
+      "matchFileNames": ["tests/v22/package.json"],
+      "matchPackageNames": ["@angular/{/,}**"],
+      "allowedVersions": "<=22"
     }
   ]
 }

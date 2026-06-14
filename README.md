@@ -37,7 +37,8 @@ Full installation, setup, API reference, and theming notes:
 ## Development
 
 ```bash
-pnpm test
+pnpm test        # Run all tests
+pnpm test:compat # Run Angular version compatibility tests
 pnpm lint
 pnpm format
 ```

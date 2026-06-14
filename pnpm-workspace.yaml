@@ -3,3 +3,9 @@ allowBuilds:
   esbuild: false
   lmdb: false
   msgpackr-extract: false
+
+packages:
+  - tests/*
+
+patchedDependencies:
+  "@material/material-color-utilities": patches/@material__material-color-utilities.patch

@@ -86,13 +86,13 @@ You can also use `color-scheme: light dark` in CSS to follow the user's system p
 
 Angular Material components read these variables, so buttons, form fields, dialogs, and other M3 components pick up the new colors immediately.
 
+## Angular compatibility table
+
+| Angular | angular-material-runtime-theme |
+| ------- | ------------------------------ |
+| 21, 22  | 0.x                            |
+
 ## Demo
-
-From the repository root:
-
-```bash
-pnpm start
-```
 
 Open [the demo](https://json-derulo.github.io/angular-material-runtime-theme/) for a live showcase with a color picker, preset swatches, dark mode toggle, and many Material components.
 
