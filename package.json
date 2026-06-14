@@ -12,6 +12,8 @@
     "test": "pnpm run /^test:/",
     "test:lib": "ng test lib",
     "test:demo": "ng test demo",
+    "test:compat-build": "pnpm -r run build",
+    "test:compat-test": "pnpm -r run test",
     "lint": "oxlint",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
