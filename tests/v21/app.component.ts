@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { AngularMaterialRuntimeTheme } from 'lib';
+import { AngularMaterialRuntimeTheme } from 'lib-dist';
 
 @Component({
   selector: 'app-root',
