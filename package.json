@@ -43,7 +43,7 @@
     "ng-packagr": "21.2.5",
     "oxfmt": "0.56.0",
     "oxlint": "1.71.0",
-    "release-it": "20.2.0",
+    "release-it": "20.2.1",
     "typescript": "6.0.3",
     "vitest": "4.1.9"
   },
