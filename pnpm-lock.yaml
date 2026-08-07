@@ -47,7 +47,7 @@ importers:
     devDependencies:
       '@angular/build':
         specifier: 21.2.19
-        version: 21.2.19(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(@angular/compiler@21.2.19)(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(@angular/platform-browser@21.2.19(@angular/common@21.2.19(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.6(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))
+        version: 21.2.19(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(@angular/compiler@21.2.19)(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(@angular/platform-browser@21.2.19(@angular/common@21.2.19(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.6(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))
       '@angular/cli':
         specifier: 21.2.19
         version: 21.2.19(chokidar@5.0.0)
@@ -64,8 +64,8 @@ importers:
         specifier: 30.0.1
         version: 30.0.1
       ng-packagr:
-        specifier: 21.2.6
-        version: 21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3)
+        specifier: 21.2.7
+        version: 21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3)
       oxfmt:
         specifier: 0.62.0
         version: 0.62.0
@@ -105,7 +105,7 @@ importers:
     devDependencies:
       '@angular/build':
         specifier: 21.2.15
-        version: 21.2.15(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(@angular/compiler@21.2.17)(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(@angular/platform-browser@21.2.17(@angular/common@21.2.17(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@5.9.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))
+        version: 21.2.15(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(@angular/compiler@21.2.17)(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(@angular/platform-browser@21.2.17(@angular/common@21.2.17(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@5.9.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))
       '@angular/cli':
         specifier: 21.2.15
         version: 21.2.15(chokidar@5.0.0)
@@ -136,7 +136,7 @@ importers:
     devDependencies:
       '@angular/build':
         specifier: 22.0.1
-        version: 22.0.1(@angular/compiler-cli@21.2.19(@angular/compiler@22.0.1)(typescript@6.0.3))(@angular/compiler@22.0.1)(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(@angular/platform-browser@22.0.1(@angular/common@22.0.1(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2)))(chokidar@5.0.0)(istanbul-lib-instrument@6.0.3)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.99.0)))
+        version: 22.0.1(@angular/compiler-cli@21.2.19(@angular/compiler@22.0.1)(typescript@6.0.3))(@angular/compiler@22.0.1)(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(@angular/platform-browser@22.0.1(@angular/common@22.0.1(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2)))(chokidar@5.0.0)(istanbul-lib-instrument@6.0.3)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.99.0)))
       '@angular/cli':
         specifier: 22.0.1
         version: 22.0.1(chokidar@5.0.0)
@@ -3930,8 +3930,8 @@ packages:
     resolution: {integrity: sha512-NHDDGYudnvRutt/VhKFlX26IotXe1w0cmkDm6JGquh5bz/bDTw0LufSmH/GxTjEdpHEO+bVKFTwdrcGa/9XlKQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  ng-packagr@21.2.6:
-    resolution: {integrity: sha512-roCbiiI1LuOIuAyxmYPIGU5SP81P/6npgHkm46gtPiXff16OUC4HbKSt67jiKObmcOvMobUwGZePHYVJOeJTWg==}
+  ng-packagr@21.2.7:
+    resolution: {integrity: sha512-G1LWptU48IbGQcAqW77JfPpGwga5dI+XUOsyBDD1zPuA1QeLqnQTPqV4tSkbL8WZJwwmqgttRrL89DD35p8vuQ==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
@@ -5183,7 +5183,7 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@angular/build@21.2.15(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(@angular/compiler@21.2.17)(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(@angular/platform-browser@21.2.17(@angular/common@21.2.17(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@5.9.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))':
+  '@angular/build@21.2.15(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(@angular/compiler@21.2.17)(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(@angular/platform-browser@21.2.17(@angular/common@21.2.17(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@5.9.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.2102.15(chokidar@5.0.0)
@@ -5221,7 +5221,7 @@ snapshots:
       '@angular/platform-browser': 21.2.17(@angular/common@21.2.17(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.17(@angular/compiler@21.2.17)(rxjs@7.8.2))
       less: 4.8.1
       lmdb: 3.5.1
-      ng-packagr: 21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3)
+      ng-packagr: 21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3)
       postcss: 8.5.25
       vitest: 4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.97.3))
     transitivePeerDependencies:
@@ -5239,7 +5239,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@angular/build@21.2.19(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(@angular/compiler@21.2.19)(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(@angular/platform-browser@21.2.19(@angular/common@21.2.19(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.6(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))':
+  '@angular/build@21.2.19(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(@angular/compiler@21.2.19)(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(@angular/platform-browser@21.2.19(@angular/common@21.2.19(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2)))(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(chokidar@5.0.0)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.6(jiti@2.7.0)(less@4.8.1)(sass@1.97.3)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.2102.19(chokidar@5.0.0)
@@ -5277,7 +5277,7 @@ snapshots:
       '@angular/platform-browser': 21.2.19(@angular/common@21.2.19(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(@angular/compiler@21.2.19)(rxjs@7.8.2))
       less: 4.8.1
       lmdb: 3.5.1
-      ng-packagr: 21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3)
+      ng-packagr: 21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3)
       postcss: 8.5.25
       vitest: 4.1.10(jsdom@30.0.1)(vite@7.3.6(jiti@2.7.0)(less@4.8.1)(sass@1.97.3))
     transitivePeerDependencies:
@@ -5295,7 +5295,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@angular/build@22.0.1(@angular/compiler-cli@21.2.19(@angular/compiler@22.0.1)(typescript@6.0.3))(@angular/compiler@22.0.1)(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(@angular/platform-browser@22.0.1(@angular/common@22.0.1(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2)))(chokidar@5.0.0)(istanbul-lib-instrument@6.0.3)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.99.0)))':
+  '@angular/build@22.0.1(@angular/compiler-cli@21.2.19(@angular/compiler@22.0.1)(typescript@6.0.3))(@angular/compiler@22.0.1)(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(@angular/platform-browser@22.0.1(@angular/common@22.0.1(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.1(@angular/compiler@22.0.1)(rxjs@7.8.2)))(chokidar@5.0.0)(istanbul-lib-instrument@6.0.3)(jiti@2.7.0)(less@4.8.1)(ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3))(postcss@8.5.25)(tslib@2.8.1)(typescript@6.0.3)(vitest@4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.99.0)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.2200.1(chokidar@5.0.0)
@@ -5332,7 +5332,7 @@ snapshots:
       istanbul-lib-instrument: 6.0.3
       less: 4.8.1
       lmdb: 3.5.4
-      ng-packagr: 21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3)
+      ng-packagr: 21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3)
       postcss: 8.5.25
       vitest: 4.1.10(jsdom@30.0.1)(vite@7.3.2(jiti@2.7.0)(less@4.8.1)(sass@1.99.0))
     transitivePeerDependencies:
@@ -8485,7 +8485,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3):
+  ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3))(tslib@2.8.1)(typescript@5.9.3):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular/compiler-cli': 21.2.19(@angular/compiler@21.2.17)(typescript@5.9.3)
@@ -8517,7 +8517,7 @@ snapshots:
       - supports-color
     optional: true
 
-  ng-packagr@21.2.6(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3):
+  ng-packagr@21.2.7(@angular/compiler-cli@21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3))(tslib@2.8.1)(typescript@6.0.3):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular/compiler-cli': 21.2.19(@angular/compiler@21.2.19)(typescript@6.0.3)
@@ -9519,7 +9519,7 @@ snapshots:
       picomatch: 4.0.4
       postcss: 8.5.25
       rollup: 4.62.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
     optionalDependencies:
       fsevents: 2.3.3
       jiti: 2.7.0
@@ -9533,7 +9533,7 @@ snapshots:
       picomatch: 4.0.4
       postcss: 8.5.25
       rollup: 4.62.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
     optionalDependencies:
       fsevents: 2.3.3
       jiti: 2.7.0

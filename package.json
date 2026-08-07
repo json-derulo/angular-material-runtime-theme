@@ -40,7 +40,7 @@
     "@release-it/bumper": "8.0.0",
     "@release-it/conventional-changelog": "12.0.0",
     "jsdom": "30.0.1",
-    "ng-packagr": "21.2.6",
+    "ng-packagr": "21.2.7",
     "oxfmt": "0.62.0",
     "oxlint": "1.77.0",
     "release-it": "21.0.1",
