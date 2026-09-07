@@ -45,7 +45,7 @@
     "oxlint": "1.81.0",
     "release-it": "21.0.2",
     "typescript": "6.0.3",
-    "vitest": "4.1.11"
+    "vitest": "5.0.0"
   },
   "packageManager": "pnpm@11.25.0"
 }
