@@ -5,7 +5,7 @@ allowBuilds:
   msgpackr-extract: false
 
 packages:
-  - tests/*
+  - compat/*
 
 patchedDependencies:
   "@material/material-color-utilities": patches/@material__material-color-utilities.patch
