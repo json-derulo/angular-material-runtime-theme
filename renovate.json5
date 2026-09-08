@@ -14,12 +14,12 @@
     {
       matchFileNames: ["tests/v21/package.json"],
       matchPackageNames: ["@angular/{/,}**"],
-      allowedVersions: "<=21",
+      allowedVersions: "<22",
     },
     {
       matchFileNames: ["tests/v22/package.json"],
       matchPackageNames: ["@angular/{/,}**"],
-      allowedVersions: "<=22",
+      allowedVersions: "<23",
     },
   ],
 }
