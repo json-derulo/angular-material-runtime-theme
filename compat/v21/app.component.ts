@@ -3,7 +3,6 @@ import { AngularMaterialRuntimeTheme } from 'lib-dist';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   template: '<h1>Test</h1>',
 })
 export class AppComponent {

@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@angular/core": ["./node_modules/@angular/core"],
+      "lib-dist": ["../../dist/lib"]
+    }
+  },
+  "include": ["*.ts"]
+}

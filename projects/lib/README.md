@@ -6,8 +6,8 @@ Built on Google's [Material Color Utilities](https://github.com/material-foundat
 
 ## Requirements
 
-- Angular **21+**
-- Angular Material **21+** with an M3 theme configured via `mat.theme()` (see [Material theming guide](https://material.angular.dev/guide/theming))
+- Angular **20+**
+- Angular Material **20+** with an M3 theme configured via `mat.theme()` (see [Material theming guide](https://material.angular.dev/guide/theming))
 
 ## Installation
 
@@ -90,7 +90,7 @@ Angular Material components read these variables, so buttons, form fields, dialo
 
 | Angular | angular-material-runtime-theme |
 | ------- | ------------------------------ |
-| 21, 22  | 0.x                            |
+| 20–22   | 0.x                            |
 
 ## Demo
 
