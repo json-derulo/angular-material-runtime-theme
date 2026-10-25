@@ -12,6 +12,11 @@
       groupName: "angular",
     },
     {
+      matchFileNames: ["compat/v20/package.json"],
+      matchPackageNames: ["@angular/{/,}**"],
+      allowedVersions: "<21",
+    },
+    {
       matchFileNames: ["compat/v21/package.json"],
       matchPackageNames: ["@angular/{/,}**"],
       allowedVersions: "<22",
