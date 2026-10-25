@@ -7,7 +7,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "pnpm run /^build:/",
-    "build:lib": "ng build lib",
+    "build:lib": "ng build lib && node -e \"require('node:fs').copyFileSync('README.md', 'dist/lib/README.md')\"",
     "build:demo": "ng build demo",
     "pretest": "pnpm build:lib",
     "test": "pnpm run /^test:/",
