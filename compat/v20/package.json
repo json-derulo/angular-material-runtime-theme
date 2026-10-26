@@ -14,8 +14,8 @@
     "tslib": "2.8.1"
   },
   "devDependencies": {
-    "@angular/build": "20.3.40",
-    "@angular/cli": "20.3.40",
+    "@angular/build": "20.3.41",
+    "@angular/cli": "20.3.41",
     "@angular/compiler-cli": "20.3.34",
     "typescript": "5.9.3"
   }
